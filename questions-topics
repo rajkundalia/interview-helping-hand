@@ -1,0 +1,476 @@
+Example of Oops concepts
+Association, Aggregation, Composition
+Inter thread communication
+Limitations of Inheritance
+Inner class
+Super, this
+Constructor chaining
+Why are wrapper classes required?
+Adapter classes
+Transient variables
+Method local inner class, types of inner class
+Anonymous class, why final variables are used here?
+Property class (hash)
+Reflection in Java
+Can we declare main method as final?
+When to us abstract class Vs interface?
+Java 7 vs 8 vs 9
+Serialisation/deserialisation
+Serializable, Clonable
+Externizable Interface
+Daemon thread
+Synchronized block/method
+1. Difference between concurrent hashMap and synchronized hashmap. - Read
+2. Callable and future - done
+3. threads - done
+4. runnable and callable threads - done
+5. caching 
+6. executors - done
+7. spring
+8. load balancing
+9. array list internal implementation - done
+10. hashset - done
+11. annotation, custom annotation
+12. functional interface
+13. jointpoint
+14. rest api annotation and writing rest api
+15. design pattern
+16. DB interview questions: sub query, join
+17. collection framework: read
+18. java 8
+19. get put post difference
+20. streams, lambda
+
+Asked:
+Fault Tolerance
+Circuit Breaker 
+Permutations of string
+Finding a loop in Linked list
+Common elements of a list
+Spring boot
+Hysterix
+Actuator
+
+Another important point is that you can declare an variable static and transient at same time and java compiler doesn't complain but doing that doesn't make any sense because transient is to instruct "do not save this field" and static variables are not saved anyway during serialization.
+
+In similar way you can apply transient and final keyword together to a variable compiler will not complain but you will face another problem of reinitializing a final variable during deserialization.
+
+Class loading techniques
+Null=null
+Read singleton again
+After finally?
+Run method without start
+Static with synchronisation
+Delete duplicate query
+Group by without/with having clause
+Array initialisation exception
+Status codes
+GET request length
+Why is rest used and not servlet?
+Maven and gradle difference
+System environment properties has an internal HashTable as the data structure.
+
+
+Difference between rest service and micro services.
+
+Executor Service with custom thread pool
+
+Java 8,  9, 10, 11, 12
+
+1. Learn Patterns
+
+2. Design Level Questions
+
+3. Java:
+OOP, inheritence, encapsulation, interfaces-imp, abstraction, exception handling, threads, listeners, adapters, Core Java, Collections, Interfaces, Exceptions, Strings
+ 
+a. OOPs concept : https://goo.gl/ZGCZIv
+b. Interface : https://goo.gl/eLRpTp
+c. Inner Class : https://goo.gl/TdncRj
+d. Exception Handling : https://goo.gl/S2NV1H
+e. MultiThreading : https://goo.gl/2fX0S2
+f. GUI with Event : https://goo.gl/gpXM4f
+
+Suggestions:
+1. Cracking the Coding Interview
+2. thenewboston - thenewboston
+3. tutorialspoint DSA
+4. SQL
+5. Read collections
+6. Read exception handling
+7. Read multi threading
+8. javatpoint interview questions
+9. DSA from geeksforgeeks check pdf
+10. Collections from geeksforgeeks 
+11. life-cycles for the languages you put in resume? 
+12. APIE, aggregation, composition, delegation ?
+13. Features of Java 8, 9, 10, 11
+14. Deadlock example
+15. Which collections don't allow null values to be inserted in them? Ans: TreeSet, ArrayDequeue, PriorityQueue, HashMap & LinkedHashMap can't have a null key (directly, can allow a reference), TreeMap.
+
+Core Java:
+Collections
+Interfaces
+Exceptions
+Strings
+
+Topics:
+OOP, inheritence, encapsulation, interfaces-imp, abstraction, exception handling, threads, listeners, adapters, 
+
+
+Java : 
+1. OOPs concept : https://goo.gl/ZGCZIv
+2. Interface : https://goo.gl/eLRpTp
+3. Inner Class : https://goo.gl/TdncRj
+4. Exception Handling : https://goo.gl/S2NV1H
+5. MultiThreading : https://goo.gl/2fX0S2
+6. GUI with Event : https://goo.gl/gpXM4f
+
+Example for SQL Question: Find name and max salary from 2 tables
+
+BEGIN TRANSACTION;
+CREATE TABLE SALARYS(Id integer PRIMARY KEY, Salary integer);
+INSERT INTO SALARYS VALUES(1,1000);
+INSERT INTO SALARYS VALUES(2,2000);
+INSERT INTO SALARYS VALUES(3,3000);
+
+/* Create a table called NAMES */
+CREATE TABLE NAMES(Id integer PRIMARY KEY, Name text, SalaryId integer references SALARY(Id));
+
+/* Create few records in this table */
+INSERT INTO NAMES VALUES(1,'Tom',1);
+INSERT INTO NAMES VALUES(2,'Lucy',2);
+INSERT INTO NAMES VALUES(3,'Frank',1);
+INSERT INTO NAMES VALUES(4,'Jane',3);
+INSERT INTO NAMES VALUES(5,'Robert',2);
+COMMIT;
+
+select n.Name, max(s.Salary) from NAMES n, SALARYS s where n.SalaryId = s.Id group by n.SalaryId having s.Salary = (select max(Salary) from SALARYS)
+
+==============================================================
+
+Web applications are multithreaded, then how can we use hashmap in it?
+
+When should we not use concurrent hashmap?
+
+Which is better is-a or has-a?
+
+Stream vs parallel stream vs foreach?
+
+We should not use when we want re-usability Lambda expression since it reduces re-usability.
+
+Transactional annotation should not be on DAO layer and should be on service layer. Since if there are 2 repo calls from service, we won't get correct output.
+
+===============================================
+Wissen
+
+> http://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
+>
+> http://javahungry.blogspot.com/2014/06/how-treemap-works-ten-treemap-java-interview-questions.html
+>
+> http://javahungry.blogspot.com/2015/02/how-concurrenthashmap-works-in-java-internal-implementation.html
+>
+> http://javahungry.blogspot.com/2015/10/how-treeset-works-internally-in-java-interview-questions.html
+>
+> http://javahungry.blogspot.com/p/threads.html
+>
+> http://javarevisited.blogspot.in/2011/04/synchronization-in-java-synchronized.html
+>
+> http://javarevisited.blogspot.in/2011/06/volatile-keyword-java-example-tutorial.html
+>
+> http://mrbool.com/working-with-java-executor-framework-in-multithreaded-application/27560
+>
+> http://stackoverflow.com/questions/10828863/what-the-use-of-custom-class-loader
+>
+> http://stackoverflow.com/questions/10901752/what-is-the-significance-of-load-factor-in-hashmap
+>
+> http://stackoverflow.com/questions/11011291/treeset-internally-uses-treemap-so-is-it-required-to-implement-hashcode-method
+>
+> http://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons
+>
+> http://stackoverflow.com/questions/13855013/understanding-java-memory-management
+>
+> http://stackoverflow.com/questions/2087469/sort-a-file-with-huge-volume-of-data-given-memory-constraint
+>
+> http://stackoverflow.com/questions/27325997/how-does-countdownlatch-works-in-java
+>
+> http://stackoverflow.com/questions/56860/what-is-the-liskov-substitution-principle
+>
+> http://stackoverflow.com/questions/8161896/example-code-to-show-how-java-synchronized-block-works
+> http://tutorials.jenkov.com/java-concurrency/synchronized.html
+>
+> http://tutorials.jenkov.com/java-util-concurrent/cyclicbarrier.html
+>
+> http://www.dynatrace.com/en/javabook/how-garbage-collection-works.html
+>
+> http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/G1GettingStarted/index.html
+>
+> http://www.programcreek.com/2013/03/hashmap-vs-treemap-vs-hashtable-vs-linkedhashmap/
+>
+> https://docs.oracle.com/cd/E13150_01/jrockit_jvm/jrockit/geninfo/diagnos/garbage_collect.html
+>
+> https://en.m.wikipedia.org/wiki/Creational_pattern
+>
+> https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)
+>
+> https://lostechies.com/derickbailey/2009/02/11/solid-development-principles-in-motivational-pictures/
+>
+> https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+
+Few Links on Database:-
+
+DB/SQL.  
+
+https://www.pluralsight.com/courses/introduction-to-sql 
+
+http://www.programmerinterview.com/index.php/database-sql/sql-having-vs-group-by/
+
+http://www.programmerinterview.com/index.php/database-sql/inner-vs-outer-joins/
+
+https://www.essentialsql.com/what-is-a-query-plan/
+
+http://www.dotnettricks.com/learn/sqlserver/understanding-case-expression-in-sql-server-with-example
+
+ 
+
+https://12factor.net/
+
+https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial
+
+https://www.baeldung.com/spring-tutorial
+
+ 
+
+·         Bindings
+
+·         Polymorphism
+
+·         Garbage Collection
+
+.         Executors
+
+·         Runtime Parameters
+
+·         Read through Concurrent Collections
+
+·         SQL Syntax
+
+.         New Java Features
+
+.         CHM
+
+.         Deadlock resolution
+
+.         Designing skills
+
+.        Object immutability
+
+.        Executor service
+
+.        Hashmap concepts
+
+.               ExecutorService
+
+.               Concurrenthashmap
+
+.               clustered and non clustered index
+
+.               Finding number in infinite range
+
+.               Range query
+
+.               Immutable class
+
+.               RDBMS
+
+ 
+
+Java
+
+----
+
+How to implement Connection pool
+
+How to implement Thread pool.
+
+Why do we need connection/thread pool
+
+How to implement Blocking Queue
+
+Explain architecture of your current project
+
+Explain different layers in micro services, How to configure load balancing
+
+Difference between Hash map and tree map
+
+What is the implementation to use a class as a key in a tree map
+
+Streams - find minimum number from a integer list
+
+Lambdas, functional interface
+
+How do you Sort numbers(which are comma separated) from a file. Size of the file is 100 GB. Assume you can load only 10 GB of data on java memory.
+
+ 
+
+Spring
+
+-------
+
+Ways of dependency injection
+
+How to you create non-singleton objects
+
+How do you inject a prototype class into a singleton class
+
+When Class A depends on Class B and Class B depends on Class A then how will you implement it
+
+ 
+
+Database
+
+---------
+
+A table has four columns id, name, manager id, department id. Write a sql to get number of employees by manager of a given department id.
+
+A table has two columns id and name. write a sql to select id(s) that are having duplicate names.
+
+----
+
+https://javahungry.blogspot.com/2015/02/how-concurrenthashmap-works-in-java-internal-implementation.html
+https://javahungry.blogspot.com/2015/10/how-treeset-works-internally-in-java-interview-questions.html
+https://javahungry.blogspot.com/p/threads.html
+https://javarevisited.blogspot.com/2011/04/synchronization-in-java-synchronized.html
+https://javarevisited.blogspot.com/2011/06/volatile-keyword-java-example-tutorial.html
+http://mrbool.com/working-with-java-executor-framework-in-multithreaded-application/27560
+https://stackoverflow.com/questions/10828863/what-is-the-use-of-custom-class-loader
+https://stackoverflow.com/questions/10901752/what-is-the-significance-of-load-factor-in-hashmap
+https://stackoverflow.com/questions/11011291/treeset-internally-uses-treemap-so-is-it-required-to-implement-hashcode-method
+https://stackoverflow.com/questions/137975/what-is-so-bad-about-singletons
+https://stackoverflow.com/questions/13855013/understanding-java-memory-management
+https://stackoverflow.com/questions/2087469/sort-a-file-with-huge-volume-of-data-given-memory-constraint
+https://stackoverflow.com/questions/8161896/example-code-to-show-how-java-synchronized-block-works
+https://www.dynatrace.com/resources/ebooks/javabook/how-garbage-collection-works/
+https://www.dynatrace.com/resources/ebooks/javabook/how-garbage-collection-works/
+https://www.programcreek.com/2013/03/hashmap-vs-treemap-vs-hashtable-vs-linkedhashmap/
+https://en.m.wikipedia.org/wiki/Creational_pattern
+https://en.wikipedia.org/wiki/SOLID
+https://lostechies.com/derickbailey/2009/02/11/solid-development-principles-in-motivational-pictures/
+https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+https://www.programmerinterview.com/database-sql/sql-having-vs-group-by/
+https://www.programmerinterview.com/database-sql/inner-vs-outer-joins/
+https://www.essentialsql.com/what-is-a-query-plan/
+https://12factor.net/
+https://www.journaldev.com/2888/spring-tutorial-spring-core-tutorial
+https://www.baeldung.com/spring-tutorial
+https://javahungry.blogspot.com/2014/06/how-treemap-works-ten-treemap-java-interview-questions.html
+https://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
+https://www.google.com/search?q=How+to+implement+Connection+pool&rlz=1C1CHBF_enIN819IN819&oq=How+to+implement+Connection+pool&aqs=chrome..69i57.1111j0j7&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=When+Class+A+depends+on+Class+B+and+Class+B+depends+on+Class+A+then+how+will+you+implement+it&rlz=1C1CHBF_enIN819IN819&oq=When+Class+A+depends+on+Class+B+and+Class+B+depends+on+Class+A+then+how+will+you+implement+it&aqs=chrome..69i57.551j0j7&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=How+do+you+inject+a+prototype+class+into+a+singleton+class&rlz=1C1CHBF_enIN819IN819&oq=How+do+you+inject+a+prototype+class+into+a+singleton+class&aqs=chrome..69i57.219j0j7&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=How+to+you+create+non-singleton+objects&rlz=1C1CHBF_enIN819IN819&oq=How+to+you+create+non-singleton+objects&aqs=chrome..69i57.155j0j7&sourceid=chrome&ie=UTF-8
+https://javarevisited.blogspot.com/2011/04/top-10-java-serialization-interview.html#axzz66ZYaZ374
+https://stackoverflow.com/questions/2229033/making-child-classes-as-non-serializable-in-java
+https://medium.com/@mr.anmolsehgal/hashtable-vs-hashmap-vs-concurrenthashmap-4aa0ff1eecc4
+
+========================================================
+
+Aryaka
+
+1. Relation between equals and hashcode method:https://howtodoinjava.com/java/basics/java-hashcode-equals-methods/
+
+
+Given an array of integers, write a function that returns true if there is a triplet (a, b, c) that satisfies a^2 + b^2 = c^2.
+          e.g. 3^2 + 4^2 = 5^2
+I/P - 3, 7, 2, 12, 5, 6, 4
+Ans -- ------
+
+Public boolean checkTriplet(int[] arr){
+	List<Integer> list = Arrays.toList(arr);
+	List<Integer> squares = new ArrayList<>();
+	for(Integer i: list){
+	squares.add(i*i);
+}
+
+for(Integer i: squares){
+	for(Integer j: squares){
+		if(squares.contains(i+j)){
+			return true;
+}
+}
+}
+return false;
+}
+
+Print "Hello from thread 1" and "Hello from thread 2" alternatively.
+      Print start should not be fixed, any thread can start printing.
+
+class ThreadSequence {
+
+	ThreadRun t1 = new ThreadRun(“Thread1”);
+	ThreadRun t2 = new ThreadRun(“Thread2”);
+
+	while(true){
+		t1.start();
+		
+}
+
+}
+
+class ThreadRun implements Runnable {
+	
+	Thread t;
+
+	Public ThreadRun(String s){
+	t = new Thread(s);
+}
+
+	@Override
+	public void run(){
+		System.out.println(“Hello from thread” + thread.getName());
+} 
+}
+
+Given 2 sorted arrays, find the n-th maximum element.
+Ans ---- 
+
+->
+merge(arr1, arr2):
+Int[] result = new int[arr1.length + arr2.length]
+Int k  =0, i=0, j=0;
+While loop: i < arr1.length && j < arr2.length
+if(arr1[i]<arr2[j]){
+	result[k] = arr1[i];
+	k++;
+	i++;
+} else{
+	result[k] = arr2[j];
+	k++;
+	j++;
+}
+
+while loop: i < arr1.length && k < result.length
+	result[k] = arr1[i];
+	i++;
+	K++;
+
+while loop: j < arr1.length && k < result.length
+	result[k] = arr2[j];
+	j++;
+	K++;
+
+-find the nth element from the array.
+		
+======================================================
+
+abcxxxxd-(4,7)
+
+abc-()
+
+abcddddcrrrrf-((4,7),(9,12))
+
+Count more than 3 or equal to 3 characters.
+
+Find first index and last index of such substrings.
+
+========================================================
