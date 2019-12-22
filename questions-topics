@@ -474,3 +474,11 @@ Count more than 3 or equal to 3 characters.
 Find first index and last index of such substrings.
 
 ========================================================
+
+Nttdata
+1. Queue using 2 stack
+2. Reverse string in logN - Use 2 pointers and exchange them both.
+3. Middle element in LinkedList in logN - run a for loop with 2 pointers, increment 1st pointer by 1 and 2nd by 2. If the 2nd pointer reaches at end, 1st pointer will reach at midpoint. 
+4. Reverse a stack - https://algorithms.tutorialhorizon.com/reverse-a-stack-using-recursion-in-place-without-using-extra-memory/
+
+==========================================================
