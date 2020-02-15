@@ -1,0 +1,35 @@
+REST Advantages:
+
+1. Language independent.
+2. Multiple data formats like json, XML, text/html, etc.
+3. Lightweight since there is complex structure involved for security.
+
+=========================================================================================================================================
+
+Java 8, 9, 10, 11:
+
+Java 8: forEach with consumer method - accept, default and static methods in interface, 
+functional interfaces and lambda expressions, stream, java time api - datetimeformatter, 
+localdatetime, comparator added multiple methods like natural ordering.
+
+Java 9: Factory Methods for Immutable List, Set, Map and Map.Entry ''of" Method,
+private method in interface module system, trywith resource improvement, 
+stream method like dropwhile-takewhile methods were added.
+
+Java 10: var support added e.g. for loop, copyOf method for collections-immutable
+
+Java 11: isblank,strip,stripLeading,repeat methods added, var in Lambda
+
+=========================================================================================================================================
+
+Maven Vs Gradle:
+
+Maven is XML based while Gradle is Groovy based.
+
+Maven has predefined plugin while Gradle can also contain scripts in Groovy; such a facility is not provided by Maven.
+
+Gradle executes the goals parallely while Maven is kind of sequential.
+
+Gradle does something like caching the dependencies which leads to faster build time.
+
+==============================================================================================================================
