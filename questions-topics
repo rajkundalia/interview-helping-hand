@@ -475,10 +475,91 @@ Find first index and last index of such substrings.
 
 ========================================================
 
-Nttdata
+NTT Data:
+
 1. Queue using 2 stack
 2. Reverse string in logN - Use 2 pointers and exchange them both.
 3. Middle element in LinkedList in logN - run a for loop with 2 pointers, increment 1st pointer by 1 and 2nd by 2. If the 2nd pointer reaches at end, 1st pointer will reach at midpoint. 
 4. Reverse a stack - https://algorithms.tutorialhorizon.com/reverse-a-stack-using-recursion-in-place-without-using-extra-memory/
 
 ==========================================================
+Accolite:
+
+1. How to make a class as non clone-able? - implement cloneable interface and override clone method to throw exception.
+2. Make a circular linked list as non circular.
+3. Transaction isolation levels in hibernate
+4. How to make a class as immutable? -https://www.journaldev.com/129/how-to-create-immutable-class-in-java
+
+==========================================================
+
+1. Good articles on docker
+https://dzone.com/articles/the-complete-docker-collection-tutorials
+
+2. Docker cheat sheet
+https://springframework.guru/docker-cheat-sheet-for-spring-de
+
+==========================================================
+Microsoft:
+
+1. Identation of json.
+2. People celebrity problem
+3. Top view of tree
+4. Reverse a LinkedList
+5. File download design
+6. Find kth last element in LinkedList
+7. Delete node at a given position, no head is given
+
+==========================================================
+map, flatmap
+controller advice
+factory, builder
+rotation of array
+application/x-www-form-urlencoded
+==========================================================
+Altimetrik - Senior Interview:
+
+Bubble sort and merge sort
+Binary search
+Altimetric hacker rank.
+
+1. {egg, cheese, bread} = {2.9, 3.9, 4.99}
+Selling products as {egg,egg,bread}
+={3.5,2.9,5.68}
+Print the products for which there is a price difference and difference amount.
+2. In a list of integers, find the repetitive ones. - count the non-unique occurrence
+3. Find the longest common substring possible from the given 2 strings.
+4. There is a list of prices for products {4,2,3,4,6,2}
+For every element if there is a equal to or lesser value at the right side then the element value will be decreased by that amount.
+Print the total price for which these all products will be sold.
+And print the indices in a sorted order of the products which are sold at original price. (Treeset)
+5. Find the first repetitive word in a sentence, - linked list (keeps the insertion order)
+
+2nd round - technical discussion
+1. Project Architecture
+2. Explain the project component
+3. Interface and classes
+4. JUnits for the class method in #3
+5. Controller advice
+6. Multi module projects
+==========================================================
+
+1. Why was stream introduced?
+2. Why were lambda expressions introduced?
+3. mvn package, mvn clean install, different goals of maven
+4. filter vs interceptor
+5. combine array in a sorted order without duplicates
+6. split a string without using inbuilt methods
+7. validation in hibernate
+8. random number print in java 8
+9. find number of 1s in a series
+10. collect in map
+11. Why stream is not possible in Map?
+12. stream methods in java
+
+==========================================================
+Siemens:
+
+Program to round off without using math functions
+Calculate angle between hands
+Sql query for three tables
+Bean in xml
