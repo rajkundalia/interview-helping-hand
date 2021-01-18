@@ -149,7 +149,7 @@ select n.Name, max(s.Salary) from NAMES n, SALARYS s where n.SalaryId = s.Id gro
 
 ==============================================================
 
-Web applications are multithreaded, then how can we use hashmap in it?
+Web applications are multithreaded, then how can we use hashmap in it? - web apps have one request one thread model.
 
 When should we not use concurrent hashmap?
 
