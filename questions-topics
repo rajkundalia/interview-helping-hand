@@ -563,3 +563,8 @@ Program to round off without using math functions
 Calculate angle between hands
 Sql query for three tables
 Bean in xml
+
+==========================================================
+By abstraction we decide what essential details are and hide the implementation details.
+By encapsulation we wrap the relevant data members and methods together into a unit called class.
+By Data hiding we decide the accessibility and visibility via access specifier.
