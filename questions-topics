@@ -569,3 +569,6 @@ https://stackoverflow.com/questions/15176356/difference-between-encapsulation-an
 By abstraction we decide what essential details are and hide the implementation details.
 By encapsulation we wrap the relevant data members and methods together into a unit called class.
 By Data hiding we decide the accessibility and visibility via access specifier.
+
+=======================================================
+https://www.javacamp.org/javavscsharp/inheritance.html
