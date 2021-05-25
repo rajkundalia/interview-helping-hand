@@ -570,6 +570,8 @@ By abstraction we decide what essential details are and hide the implementation 
 By encapsulation we wrap the relevant data members and methods together into a unit called class.
 By Data hiding we decide the accessibility and visibility via access specifier.
 
+https://www.geeksforgeeks.org/difference-between-singleton-pattern-and-static-class-in-java/?ref=rp
+
 =======================================================
 C#
 https://www.javacamp.org/javavscsharp/inheritance.html
