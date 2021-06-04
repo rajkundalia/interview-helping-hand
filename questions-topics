@@ -571,10 +571,12 @@ By encapsulation we wrap the relevant data members and methods together into a u
 By Data hiding we decide the accessibility and visibility via access specifier.
 
 https://www.geeksforgeeks.org/difference-between-singleton-pattern-and-static-class-in-java/?ref=rp
-
+https://stackoverflow.com/questions/16467685/difference-between-mock-and-injectmocks
 =======================================================
 C#
 https://www.javacamp.org/javavscsharp/inheritance.html
 https://www.geeksforgeeks.org/referencing-subclass-objects-subclass-vs-superclass-reference/
 https://medium.com/@mypascal2000/disposable-patterns-ffa2145619e2
 https://curia.me/the-idisposable-pattern-explained/
+
+
