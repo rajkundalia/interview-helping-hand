@@ -4,5 +4,40 @@ Collections.sort(Arrays.asList(sa), null);
 System.out.println(sa[0]); // o/p: andy
 
 2. 
-        
-        
+Stream st = Stream.iterate("", (str) -> str + "x");
+st.limit(3).map(str -> str + "y").forEach(x -> System.out.println(x)); //o/p xxy
+https://mkyong.com/java8/java-8-stream-iterate-examples/
+
+3.
+package check;
+
+abstract class Animal {
+    abstract void eat();
+}
+class Dog extends Animal {
+
+    @Override
+    void eat() {
+        System.out.println("dog eats biscuits");
+    }
+}
+class Cat extends Animal {
+
+    @Override
+    void eat() {
+        System.out.println("cat eats biscuits");
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Animal[] animals = new Dog[2];
+        animals[0] = new Dog();
+        animals[1] = new Cat();
+        animals[0].eat();
+        animals[1].eat();
+    }
+}
+o/p:java.lang.ArrayStoreException: check.Cat
+
+4.
+
