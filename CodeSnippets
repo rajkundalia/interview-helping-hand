@@ -1,0 +1,5 @@
+        String[] sa = {"charlie ", "bob ", "andy ", "dave "};
+        Collections.sort(Arrays.asList(sa), null);
+        System.out.println(sa[0]); // o/p: andy
+        
+        
