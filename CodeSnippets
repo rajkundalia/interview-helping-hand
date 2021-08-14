@@ -46,4 +46,10 @@ o/p: java.lang.IllegalArgumentException
 p1.getName(2) -> BHG.iml
 
 5.
+Path p1 = Paths.get("photos/goa");
+Path p2 = Paths.get("/index.html");
+Path p3 = p1.relativize(p2);
+System.out.println(p3);
+o/p: java.lang.IllegalArgumentException: 'other' is different type of Path
 
+if "photos/goa" is changed to "/photos/goa" -> o/p ..\..\index.html
