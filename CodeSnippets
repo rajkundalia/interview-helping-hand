@@ -104,3 +104,14 @@ public class SnippetsFromHackerearth {
 conclusion: line 5 is unreachable and compile time error.
 
 9.
+static public void main(String[] args) throws Exception {
+    int x = Integer.parseInt(args[0]);
+    switch (x) {
+        case x < 5:
+            System.out.println(x);
+        }
+    }
+}
+o/p: compile issue as x<5 is not int.
+
+10.
