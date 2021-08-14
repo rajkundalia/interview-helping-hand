@@ -94,3 +94,13 @@ public class B {
 o/p: 1423
 
 8.
+class MyException extends RuntimeException {} //line 1
+public class SnippetsFromHackerearth {
+    static public void main(String[] args) throws Exception {
+        throw new MyException();
+        System.out.println("success"); //line 5
+    }
+}
+conclusion: line 5 is unreachable and compile time error.
+
+9.
