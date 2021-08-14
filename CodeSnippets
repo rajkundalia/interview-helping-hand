@@ -40,4 +40,10 @@ public class Test {
 o/p:java.lang.ArrayStoreException: check.Cat
 
 4.
+Path p1 = Paths.get("D:\\IntelliJProjects\\BHG\\BHG.iml");
+System.out.println(p1.getName(3));
+o/p: java.lang.IllegalArgumentException
+p1.getName(2) -> BHG.iml
+
+5.
 
