@@ -116,7 +116,9 @@ o/p: compile issue as x<5 is not int.
 
 10.
 Stream<Integer> numStream = Stream.of(10,20,30);
-numStream.map(n->n+10).peek(s-> System.out.print(s));
+numStream.map(n->n+10).peek(s-> System.out.print(s)); //only keep this line would not give any o/p as peek is not a terminal operation and is an intermediate operation
 numStream.forEach(s-> System.out.println(s));
 
-o/p: IllegalStateException: stream has already been operated upon or closed
+o/p: IllegalStateException: stream has already been operated upon or closed - stream once consumed will throw this exception.
+
+11.
