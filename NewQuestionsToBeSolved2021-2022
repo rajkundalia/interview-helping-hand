@@ -1,18 +1,22 @@
-pepcoding - recursion: https://youtube.com/playlist?list=PL-Jc9J83PIiFxaBahjslhBD1LiJAV7nKs
+1. pepcoding - recursion: https://youtube.com/playlist?list=PL-Jc9J83PIiFxaBahjslhBD1LiJAV7nKs [in progress]
 
-pepcoding - DP: https://youtube.com/playlist?list=PL-Jc9J83PIiG8fE6rj9F5a6uyQ5WPdqKy
+2. pepcoding - DP: https://youtube.com/playlist?list=PL-Jc9J83PIiG8fE6rj9F5a6uyQ5WPdqKy
 
-microservice: https://youtube.com/playlist?list=PLD-mYtebG3X9HaZ1T39-aF4ghEtWy9-v3
+3. microservice: https://youtube.com/playlist?list=PLD-mYtebG3X9HaZ1T39-aF4ghEtWy9-v3 along with springboot too.
 
-print first repeating number in array
+4. print first repeating number in array
 
-delete the char from a string such that it appears unique time - input - aaabbb output -1, it will remove one "a" or one "b" so output =1
+5. delete the char from a string such that it appears unique time - input - aaabbb output -1, it will remove one "a" or one "b" so output =1
 
-programming for you- print string in permutation input- aB output -AB,ab,Ab,aB,
+6. programming for you- print string in permutation input- aB output -AB,ab,Ab,aB,
 
-given a integer N , print the lowest number whose sum is N . input - 10 output-19
+7. given a integer N , print the lowest number whose sum is N . input - 10 output-19
 
-given a string x.x.x.x /x:x:x:x:x:x:x . print ipv4 or Ipv6
+8. given a string x.x.x.x /x:x:x:x:x:x:x . print ipv4 or Ipv6
 
-sort roman numerals java
+9. sort roman numerals java
+
+11. divide array in three parts:
+all the sub arrays sum should be equal
+sum of first array< sum of mid array < sum of right array
 
